@@ -19,16 +19,17 @@ class Program
 
         // Simple number guessing game
         Console.WriteLine("Let's play a number guessing game!");
-        Console.WriteLine("I'm thinking of a number between 1 and 10...");
+        Console.WriteLine("I'm thinking of a number between 1 and 100...");
         Console.WriteLine("Tip: Try guessing in the middle!");
         Console.WriteLine();
 
         Random random = new Random();
-        int secretNumber = random.Next(1, 11);
+        int secretNumber = random.Next(1, 101);
         int attempts = 0;
+        int maxAttempts = 7;
         bool guessed = false;
 
-        while (!guessed)
+        while (!guessed && attempts < maxAttempts)
         {
             Console.Write("Your guess: ");
             string input = Console.ReadLine();
@@ -50,6 +51,11 @@ class Program
             {
                 Console.WriteLine("Please enter a valid number.");
             }
+        }
+
+        if (!guessed)
+        {
+            Console.WriteLine($"\nGame over! The number was {secretNumber}.");
         }
 
         Console.WriteLine();
