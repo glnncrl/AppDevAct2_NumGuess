@@ -59,7 +59,7 @@ class Program
         }
 
         Console.WriteLine();
-        Console.WriteLine("Thanks for playing! Goodbye, " + name + "!");
+        Console.WriteLine("Thanks for playing, " + name + "!");
         Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
     }
