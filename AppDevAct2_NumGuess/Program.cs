@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("===================================");
-        Console.WriteLine("   Welcome to My C# Application!  ");
-        Console.WriteLine("===================================");
+        Console.WriteLine("==========================================");
+        Console.WriteLine("   Welcome to this Simple C# Application!  ");
+        Console.WriteLine("==========================================");
         Console.WriteLine();
 
         // Get user's name
@@ -20,6 +20,7 @@ class Program
         // Simple number guessing game
         Console.WriteLine("Let's play a number guessing game!");
         Console.WriteLine("I'm thinking of a number between 1 and 10...");
+        Console.WriteLine("Tip: Try guessing in the middle!");
         Console.WriteLine();
 
         Random random = new Random();
