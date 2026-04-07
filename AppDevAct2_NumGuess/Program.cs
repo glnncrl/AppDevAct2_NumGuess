@@ -16,6 +16,8 @@ class Program
         // Greet the user
         Console.WriteLine($"\nHello, {name}! Nice to meet you.");
         Console.WriteLine();
+        Console.WriteLine("Good luck, " + name + "!");
+        Console.WriteLine();
 
         // Simple number guessing game
         Console.WriteLine("Let's play a number guessing game!");
